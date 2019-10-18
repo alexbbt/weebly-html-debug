@@ -1,22 +1,69 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- GDPR Script - Must be first thing in Head -->
+        <script type="text/javascript" src="https://www.local.weebly.net/gdpr/gdprscript.js?buildTime=123412341234"></script>
+
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <link rel="icon" href="https://xms-production-f.squarecdn.com/xms/assets/public-web-styles/favicon-770e0889aefd823056c7cdbb066a445be0f0754c1b4d4cba877e120fdbcb63e6.ico">
 
-        <!-- Meta tags for social sharing -->
-        <title>Pay Alex's DTC Store</title>
-        <meta name="description" content="Apple Sauce Class Deposit"/>
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://alexbbt.github.io/weebly-html-debug/"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="HandheldFriendly" content="true">
+        <!-- The above two lines are a hack to make it not zoom on input fields -->
+        <!-- https://stackoverflow.com/a/28489465 -->
 
-        <meta property="og:title" content="Pay Alex's DTC Store"/>
-        <meta property="og:description" content="Apple Sauce Class Deposit"/>
+        <!-- Meta tags for social sharing -->
+        <title>Pay My Business</title>
+        <meta name="description" content="alex paylink"/>
+        <meta property="og:url" content="https://checkout.square.local.weebly.net/pay/46ce1aa7-717d-4853-9dce-4f28ceb789fb"/>
+
+        <meta property="og:title" content="Pay My Business"/>
+        <meta property="og:description" content="alex paylink"/>
         <meta property="og:image" content="https://user-images.githubusercontent.com/7255363/66589499-a9374100-eb5c-11e9-8d70-aff9b8ad0ed9.png" />
 
         <meta name="twitter:card" content="summary"/>
         <meta property="twitter:image" content="https://user-images.githubusercontent.com/7255363/66589498-a89eaa80-eb5c-11e9-901b-090f48425feb.png" />
+
+        <!-- link to the SqPaymentForm library -->
+        <script type="text/javascript" src="https://js.squareupstaging.com/v2/paymentform"></script>
+        <style>
+            html, body, main {
+                padding: 0;
+                margin: 0;
+                height: 100%;
+                width: 100%;
+                -webkit-text-size-adjust: none;
+                /* https://stackoverflow.com/a/28489465 */
+            }
+
+            main {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        </style>
     </head>
-    <body>
+    <body class="">
+        <main>
+            <section id="app"></section>
+        </main>
+        <script>
+            var CONFIG_DOMAIN = 'https://www.local.weebly.net';
+            var ASSETS_BASE = 'https://assets-www.local.weebly.net';
+            var PUBLISHED_SITE_TRACKING_COLLECTOR_HOST_NAME = 'ec.editmysite.com';
+            var PUBLISHED_SITE_TRACKING_LIBRARY = 'assets-www.local.weebly.net/js/wsnbn/snowday262.js';
+            var PUBLISHED_SITE_TRACKING_FUNCTION_NAME = 'snowday';
+            var PUBLISHED_SITE_TRACKING_APP_ID = '_wn';
+            var STYLE_PREFIX = 'wsite';
+        </script>
+        <script>
+            window.bootstrap = {
+                order: JSON.parse('{"id":"RqGSCRXbKd7OaWV0fKIdqGDyLe4F","merchant_id":"WGZ734GS7Y412","location_id":"5GP2NXGD6CQW8","line_items":[{"uid":"T7uyWKWwcdT29VvZJL6ZuB","quantity":"1","name":"alex paylink","base_price_money":{"amount":500,"currency":"USD"},"metadata":[{"key":"pay_link_id","string_value":"46ce1aa7-717d-4853-9dce-4f28ceb789fb"}],"gross_sales_money":{"amount":500,"currency":"USD"},"total_tax_money":{"amount":0,"currency":"USD"},"total_discount_money":{"amount":0,"currency":"USD"},"total_money":{"amount":500,"currency":"USD"},"variation_total_price_money":{"amount":500,"currency":"USD"},"item_type":"ITEM","metadata_map":{"pay_link_id":"46ce1aa7-717d-4853-9dce-4f28ceb789fb"}}],"created_at":"2019-10-18T14:20:42.438Z","updated_at":"2019-10-18T14:20:42.438Z","state":"OPEN","version":1,"total_tax_money":{"amount":0,"currency":"USD"},"total_discount_money":{"amount":0,"currency":"USD"},"total_tip_money":{"amount":0,"currency":"USD"},"total_money":{"amount":500,"currency":"USD"},"total_service_charge_money":{"amount":0,"currency":"USD"},"net_amounts":{"total_money":{"amount":500,"currency":"USD"},"tax_money":{"amount":0,"currency":"USD"},"discount_money":{"amount":0,"currency":"USD"},"tip_money":{"amount":0,"currency":"USD"},"service_charge_money":{"amount":0,"currency":"USD"}},"creator_app_id":"sq0ids-4y_ky2XcDrRxMpdG6woSFg","source":{"name":"Checkout Link","application_name":"Weebly Sync alexbbt local","application_id":"sq0ids-4y_ky2XcDrRxMpdG6woSFg"}}'),
+                trackingId: 'pay:121909646:287129527785796728:46ce1aa7-717d-4853-9dce-4f28ceb789fb:RqGSCRXbKd7OaWV0fKIdqGDyLe4F',
+                siteTitle: "My Business",
+            };
+        </script>
+
+        <script src="https://assets-www.local.weebly.net/js/app-roots/checkout/main.en.js?buildTime=123412341234"></script>
     </body>
 </html>
